@@ -1,0 +1,113 @@
+.movies-cards-container {
+    background-color: #F7F7F7;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+       display: flex;
+       flex-wrap: wrap;
+       padding-left: 0px;
+        padding-right: 0px;
+       padding-top: 28px;
+    }
+
+    @media screen and (min-width: 1100px) {
+        padding-left: 16px;
+        padding-top: 28px;
+        padding-right: 0px;
+    }
+}
+
+.movie-card {
+    background-color: #F7F7F7;
+    margin-bottom: 0;
+
+  
+    
+      
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(((100vw - 32px) / 2) - 32px);
+        margin-left: 32px;
+        margin-top: 32px;
+
+          &:hover {
+        transform: scale(1.05);
+        border-radius: 1px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+      }
+
+      @media screen and (min-width: 1100px) {
+        flex-basis: calc(((100vw - 48px) / 3) - 16px);
+        margin-left: 16px;
+        margin-top: 32px;
+
+        &:hover {
+                transform: scale(1.05);
+                border-radius: 1px;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+        
+      }
+}
+
+.movie-card-img {
+border-radius: 5px;
+
+margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+        height: calc((((100vw - 32px) / 2) - 32px) * 1.5);
+    }
+
+    @media screen and (min-width: 1100px) {
+        height: calc((((100vw - 48px) / 3) - 16px) * 1.5);
+        margin-bottom: 12px;
+    }
+}
+
+.movie-card-info-set {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+   
+    
+
+    @media screen and (min-width: 1100px) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.movie-card-info-title {
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+
+
+    &:hover {
+        color: rgba(255, 107, 8, 1);
+    }
+}
+
+.movie-card-info-genre {
+    color: rgba(255, 107, 8, 1)
+}
+
+.movie-card-link {
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+
+.movie-card-info-date {
+    color: rgba(255, 107, 8, 1)
+}
+
+.movie-card-info-details-set {
+    display: flex;
+}
+

@@ -1,0 +1,89 @@
+
+.modal-backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(100, 100, 100, 0.5);
+    transition: all 0.5s ease-in-out;
+    z-index: 20;
+}
+
+
+.movie-modal {
+    display: flex;
+    width: calc(100vw * 0.63);
+    height: calc(100vh * 0.44);
+    background-color: white;
+    padding: 40px 12px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50vh;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    
+        @media screen and(min-width: 768px) and (max-width: 1279px) {
+            // width: 704px;
+            // height: 552px;
+            padding: 40px 72px 40px 36px;
+        }
+    
+        @media screen and(min-width:480px) and (max-width: 767px) {
+            display: block;
+            // width: 90%;
+            // max-width: 400px;
+            // height: 487px;
+            padding: 40px 15px 20px 15px;
+        }
+    
+        @media screen and(max-width:480px) {
+            display: block;
+            // width: 268px;
+            // height: 487px;
+            padding: 40px 15px 20px 15px;
+        }
+ 
+}
+
+.movie-modal-close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    background: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        }
+}
+
+.movie-modal-close-btn-icon {
+    width: 16px;
+    height: 16px;
+    fill: #000;
+    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: #000;
+
+    &:hover,
+        &:focus {
+            fill: #FF6B01;
+            stroke: #FF6B01;
+        }
+}
