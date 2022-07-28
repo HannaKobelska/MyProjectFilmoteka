@@ -1,4 +1,4 @@
-// import { renderLibraryMovies } from './library.js';
+import { renderLibraryMovies } from './library.js';
 import { fetchMoviesById } from './fetchMovies.js';
 
 
@@ -157,9 +157,9 @@ function onButtonAddToWatched(event) {
       localStorage.setItem("queue-movies", removeIdLocalStorage(movieId, queueMovies));
     }
 
-    // if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
-    //   renderLibraryMovies();
-    // }
+    if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
+      renderLibraryMovies();
+    }
 
   } else {
     setButtonWatchedStatus(1);
@@ -169,9 +169,9 @@ function onButtonAddToWatched(event) {
         localStorage.setItem("watched-movies", removeIdLocalStorage(movieId, watchedMovies));
     }
 
-    //  if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
-    //   renderLibraryMovies();
-    // }
+     if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
+      renderLibraryMovies();
+    }
     
   }
 
@@ -199,9 +199,9 @@ function onButtonAddToQueue(event) {
         localStorage.setItem("watched-movies", removeIdLocalStorage(movieId, watchedMovies));
      }
      
-    //    if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
-    //   renderLibraryMovies();
-    // }
+       if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
+      renderLibraryMovies();
+    }
 
    
   } else {
@@ -212,9 +212,9 @@ function onButtonAddToQueue(event) {
       localStorage.setItem("queue-movies", removeIdLocalStorage(movieId, queueMovies));
      }
      
-    //    if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
-    //   renderLibraryMovies();
-    // }
+       if (refs.openModalContainer.classList.contains('movies-cards-container-library')) {
+      renderLibraryMovies();
+    }
     
   }
   

@@ -6,6 +6,8 @@
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./js/library.js"></script>
+      <script type="module" src="./js/modal_lib.js"></script>
+      <script type="module" src="./js/header_styles.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,5 +30,39 @@
 
     <!-- <include src="./partials/single-card.html"></include> -->
     <!-- <include src="./partials/footer.html"></include> -->
+
+      <div class="movies-cards-container movies-cards-container-library">
+      
+      </div>
+
+
+
+        <!-- Модалка -->
+        <section>
+          <div class="modal-backdrop is-hidden" data-modal>
+        
+            <div class="movie-modal">
+        
+              <button type="button" class="movie-modal-close-btn" data-modal-close>
+                <svg width="12" height="12" class="movie-modal-close-btn-icon">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+        
+        
+        
+        
+              <div class="movie-modal-card">
+        
+              </div>
+        
+        
+        
+        
+        
+            </div>
+          </div>
+        </section>
+
   </body>
 </html>

@@ -1,3 +1,5 @@
+import { renderLibraryMovies } from './library.js';
+
 const refs = {
     watchBtn: document.querySelector('#header-watched-button'),
     queueBtn: document.querySelector('#header-queue-button'),
@@ -14,6 +16,8 @@ function onWatchBtnClick(event) {
         refs.queueBtn.classList.add('is-header-nonactive');
 
         // вызов функции обновления контента страницы
+
+        renderLibraryMovies();
     }
 }
 
@@ -25,6 +29,8 @@ function onQueueBtnClick(event) {
         refs.watchBtn.classList.add('is-header-nonactive');
 
         // вызов функции обновления контента страницы
+
+        renderLibraryMovies();
     }
  
 }

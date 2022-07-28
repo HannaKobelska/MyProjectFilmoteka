@@ -30,5 +30,16 @@ export function fetchMoviesByName(name, pageNumber) {
         .then(response => {
             return response.json();
         }
+    );
+}
+
+export function fetchMoviesById(movieId) {
+
+    console.log(`${BASE_URL}movie/${movieId}?api_key=${MY_KEY}`);
+   
+    return fetch(`${BASE_URL}movie/${movieId}?api_key=${MY_KEY}`)
+        .then(response => {
+            return response.json();
+        }
         );
 }
